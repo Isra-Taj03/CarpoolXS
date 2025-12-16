@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+<listener class-name="testCases.ExtetReportManager"></listener>
+</listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <!--  <class name="testCases.LoginDataDrivenTest"/> -->
+      <!--  <class name="testCases.All_Drivers"/> -->
+      <class name="testCases.All_Routes"/>
+      <!--  <class name="testCases.All_Tenants"/> -->
+      <!--  <class name="testCases.AddTenanant"/> -->
+      <!--  <class name="testCases.RouteInfo"/> -->
+      <!--  <class name="testCases.DriverInfo"/> -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

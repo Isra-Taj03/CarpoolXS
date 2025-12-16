@@ -1,73 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-24T10:06:05 PKT" name="Default suite" finished-at="2025-04-24T10:07:12 PKT" duration-ms="67016">
+  <suite started-at="2025-05-19T16:41:51 PKT" name="Default suite" finished-at="2025-05-19T16:42:33 PKT" duration-ms="42189">
     <groups>
     </groups>
-    <test started-at="2025-04-24T10:06:05 PKT" name="Default test" finished-at="2025-04-24T10:07:12 PKT" duration-ms="67016">
-      <class name="testCases.All_Drivers">
-        <test-method signature="setup()[pri:1, instance:testCases.All_Drivers@59474f18]" started-at="2025-04-24T10:06:05 PKT" name="setup" finished-at="2025-04-24T10:06:09 PKT" duration-ms="3609" status="PASS">
+    <test started-at="2025-05-19T16:41:51 PKT" name="Default test" finished-at="2025-05-19T16:42:33 PKT" duration-ms="42189">
+      <class name="testCases.All_Routes">
+        <test-method signature="setup()[pri:1, instance:testCases.All_Routes@765d7657]" started-at="2025-05-19T16:41:51 PKT" name="setup" finished-at="2025-05-19T16:42:03 PKT" duration-ms="11704" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="performlogin()[pri:2, instance:testCases.All_Drivers@59474f18]" started-at="2025-04-24T10:06:09 PKT" name="performlogin" finished-at="2025-04-24T10:06:09 PKT" depends-on-methods="testCases.All_Drivers.setup" duration-ms="647" status="PASS">
+        <test-method signature="performlogin()[pri:2, instance:testCases.All_Routes@765d7657]" started-at="2025-05-19T16:42:03 PKT" name="performlogin" finished-at="2025-05-19T16:42:07 PKT" depends-on-methods="testCases.All_Routes.setup" duration-ms="4059" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- performlogin -->
-        <test-method signature="DriverSearch()[pri:3, instance:testCases.All_Drivers@59474f18]" started-at="2025-04-24T10:06:09 PKT" name="DriverSearch" finished-at="2025-04-24T10:06:20 PKT" duration-ms="10215" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DriverSearch -->
-        <test-method signature="TestAddDriver()[pri:4, instance:testCases.All_Drivers@59474f18]" started-at="2025-04-24T10:06:20 PKT" name="TestAddDriver" finished-at="2025-04-24T10:06:38 PKT" duration-ms="18113" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestAddDriver -->
-        <test-method signature="TestUpdateDriver()[pri:5, instance:testCases.All_Drivers@59474f18]" started-at="2025-04-24T10:06:38 PKT" name="TestUpdateDriver" finished-at="2025-04-24T10:07:10 PKT" duration-ms="32098" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestUpdateDriver -->
-        <test-method signature="DeleteDriver()[pri:6, instance:testCases.All_Drivers@59474f18]" started-at="2025-04-24T10:07:10 PKT" name="DeleteDriver" finished-at="2025-04-24T10:07:11 PKT" duration-ms="1328" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="UpdateRoute()[pri:4, instance:testCases.All_Routes@765d7657]" started-at="2025-05-19T16:42:07 PKT" name="UpdateRoute" finished-at="2025-05-19T16:42:33 PKT" duration-ms="26212" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[element click intercepted: Element <button class="text-red-600 hover:text-red-800">...</button> is not clickable at point (1155, 253). Other element would receive the click: <div class="absolute inset-0 flex justify-center items-center bg-gray-500 bg-opacity-70">...</div>
-  (Session info: chrome=135.0.7049.97)
-Build info: version: '4.31.0', revision: '1ef9f18787*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [aa60dc69f1b1f09fec2863f152c2ec08, clickElement {id=f.4455B5570F002C086899B5F52B2706C7.d.E0312F2A6BB3466205F7FC9EE33A5487.e.132}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.97, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\TESLAL~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60968}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60968/devtoo..., se:cdpVersion: 135.0.7049.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (aa60dc69f1b1f09fec2863f152c2ec08)] -> xpath: /html/body/div/div/div[3]/div/div/div/table/tbody/tr[1]/td[9]/div/button[2]]
-Session ID: aa60dc69f1b1f09fec2863f152c2ec08]]>
+              <![CDATA[The following asserts failed:
+Validation Error: Phone number must be exactly 11 digits,
+Unexpected toast message expected [Route updated successfully.] but found [null],
+Testcase Failed]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="text-red-600 hover:text-red-800">...</button> is not clickable at point (1155, 253). Other element would receive the click: <div class="absolute inset-0 flex justify-center items-center bg-gray-500 bg-opacity-70">...</div>
-  (Session info: chrome=135.0.7049.97)
-Build info: version: '4.31.0', revision: '1ef9f18787*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [aa60dc69f1b1f09fec2863f152c2ec08, clickElement {id=f.4455B5570F002C086899B5F52B2706C7.d.E0312F2A6BB3466205F7FC9EE33A5487.e.132}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.97, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\TESLAL~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60968}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60968/devtoo..., se:cdpVersion: 135.0.7049.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (aa60dc69f1b1f09fec2863f152c2ec08)] -> xpath: /html/body/div/div/div[3]/div/div/div/table/tbody/tr[1]/td[9]/div/button[2]]
-Session ID: aa60dc69f1b1f09fec2863f152c2ec08
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy10.click(Unknown Source)
-at PageObjects.AllDrivers.deleteDriver(AllDrivers.java:203)
-at testCases.All_Drivers.DeleteDriver(All_Drivers.java:80)
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Validation Error: Phone number must be exactly 11 digits,
+Unexpected toast message expected [Route updated successfully.] but found [null],
+Testcase Failed
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testCases.All_Routes.UpdateRoute(All_Routes.java:148)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -96,15 +59,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DeleteDriver -->
-        <test-method signature="FetLocDriver()[pri:7, instance:testCases.All_Drivers@59474f18]" started-at="2025-04-24T10:07:11 PKT" name="FetLocDriver" finished-at="2025-04-24T10:07:12 PKT" duration-ms="786" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FetLocDriver -->
-      </class> <!-- testCases.All_Drivers -->
+        </test-method> <!-- UpdateRoute -->
+      </class> <!-- testCases.All_Routes -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

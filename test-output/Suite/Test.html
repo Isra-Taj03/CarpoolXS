@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Apr 20 18:02:46 PKT 2025</td>
+<td>Started on:</td><td>Mon May 19 12:23:41 PKT 2025</td>
 </tr>
-<tr><td>Total time:</td><td>69 seconds (69579 ms)</td>
+<tr><td>Total time:</td><td>82 seconds (82848 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,49 +76,35 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.All_Drivers.DriverSearch()'><b>DriverSearch</b><br>Test class: testCases.All_Drivers</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: /html/body/div/div/div[2]/div/div[2]/input&apos; (tried for 20 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at PageObjects.AllDrivers.SearchDriver(AllDrivers.java:117)
-	at testCases.All_Drivers.DriverSearch(All_Drivers.java:65)
+<td title='testCases.All_Routes.TestaddRoute()'><b>TestaddRoute</b><br>Test class: testCases.All_Routes</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Validation Error: Phone Number field is  invalid,should take only numbers as input,
+	Validation Error: pick_up_Location field is  invalid,should take only numbers as input,
+	Validation Error: drop_off_Location field is  invalid,should take only numbers as input,
+	Validation Error: Phone number must be exactly 11 digits,
+	Validation Error: Passenger Name field is  invalid,should take only characters as input,
+	Validation Error: Phone Number field is  invalid,should take only numbers as input,
+	Validation Error: pick_up_Location field is  invalid,should take only numbers as input,
+	Validation Error: drop_off_Location field is  invalid,should take only numbers as input,
+	Validation Error: Phone number must be exactly 11 digits,
+	Validation Error: Latitude pattern is invalid
+	at testCases.All_Routes.TestaddRoute(All_Routes.java:108)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div/div/div[2]/div/div[2]/input&quot;}
-  (Session info: chrome=135.0.7049.96)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b55fa47e997688d5cd1763e1a60874ae, findElement {using=xpath, value=/html/body/div/div/div[2]/div/div[2]/input}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\TESLAL~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54638}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54638/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b55fa47e997688d5cd1763e1a60874ae
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy10.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 28 more
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace57085696", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace57085696'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: /html/body/div/div/div[2]/div/div[2]/input&apos; (tried for 20 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at PageObjects.AllDrivers.SearchDriver(AllDrivers.java:117)
-	at testCases.All_Drivers.DriverSearch(All_Drivers.java:65)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1917071489", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1917071489'><pre>java.lang.AssertionError: The following asserts failed:
+	Validation Error: Phone Number field is  invalid,should take only numbers as input,
+	Validation Error: pick_up_Location field is  invalid,should take only numbers as input,
+	Validation Error: drop_off_Location field is  invalid,should take only numbers as input,
+	Validation Error: Phone number must be exactly 11 digits,
+	Validation Error: Passenger Name field is  invalid,should take only characters as input,
+	Validation Error: Phone Number field is  invalid,should take only numbers as input,
+	Validation Error: pick_up_Location field is  invalid,should take only numbers as input,
+	Validation Error: drop_off_Location field is  invalid,should take only numbers as input,
+	Validation Error: Phone number must be exactly 11 digits,
+	Validation Error: Latitude pattern is invalid
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.All_Routes.TestaddRoute(All_Routes.java:108)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -145,95 +131,21 @@ Session ID: b55fa47e997688d5cd1763e1a60874ae
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div/div/div[2]/div/div[2]/input&quot;}
-  (Session info: chrome=135.0.7049.96)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b55fa47e997688d5cd1763e1a60874ae, findElement {using=xpath, value=/html/body/div/div/div[2]/div/div[2]/input}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\TESLAL~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54638}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54638/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b55fa47e997688d5cd1763e1a60874ae
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy10.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 28 more
 </pre></div></td>
-<td>20</td>
-<td>testCases.All_Drivers@128d2484</td></tr>
+<td>30</td>
+<td>testCases.All_Routes@74235045</td></tr>
 <tr>
-<td title='testCases.All_Drivers.DeleteDriver()'><b>DeleteDriver</b><br>Test class: testCases.All_Drivers</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;text-red-600 hover:text-red-800&quot;&gt;...&lt;/button&gt; is not clickable at point (1155, 262). Other element would receive the click: &lt;div class=&quot;absolute inset-0 flex justify-center items-center bg-gray-500 bg-opacity-70&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=135.0.7049.96)
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b55fa47e997688d5cd1763e1a60874ae, clickElement {id=f.4F040ABBFCB1A62E70D113B37F9BABDD.d.720AC0F995D4CC7DE5AC5722CA7AD09E.e.83}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\TESLAL~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54638}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54638/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (b55fa47e997688d5cd1763e1a60874ae)] -&gt; xpath: /html/body/div/div/div[3]/div/div/div/table/tbody/tr[1]/td[9]/div/button[2]]
-Session ID: b55fa47e997688d5cd1763e1a60874ae
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy10.click(Unknown Source)
-	at PageObjects.AllDrivers.deleteDriver(AllDrivers.java:203)
-	at testCases.All_Drivers.DeleteDriver(All_Drivers.java:78)
+<td title='testCases.All_Routes.searchRoute()'><b>searchRoute</b><br>Test class: testCases.All_Routes</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Route ID not found in any row: RTE120066299 expected [true] but found [false]
+	at testCases.All_Routes.searchRoute(All_Routes.java:251)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace648630181", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace648630181'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;text-red-600 hover:text-red-800&quot;&gt;...&lt;/button&gt; is not clickable at point (1155, 262). Other element would receive the click: &lt;div class=&quot;absolute inset-0 flex justify-center items-center bg-gray-500 bg-opacity-70&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=135.0.7049.96)
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b55fa47e997688d5cd1763e1a60874ae, clickElement {id=f.4F040ABBFCB1A62E70D113B37F9BABDD.d.720AC0F995D4CC7DE5AC5722CA7AD09E.e.83}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\TESLAL~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54638}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54638/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (b55fa47e997688d5cd1763e1a60874ae)] -&gt; xpath: /html/body/div/div/div[3]/div/div/div/table/tbody/tr[1]/td[9]/div/button[2]]
-Session ID: b55fa47e997688d5cd1763e1a60874ae
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy10.click(Unknown Source)
-	at PageObjects.AllDrivers.deleteDriver(AllDrivers.java:203)
-	at testCases.All_Drivers.DeleteDriver(All_Drivers.java:78)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2090593105", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2090593105'><pre>java.lang.AssertionError: The following asserts failed:
+	Route ID not found in any row: RTE120066299 expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.All_Routes.searchRoute(All_Routes.java:251)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -261,61 +173,24 @@ Session ID: b55fa47e997688d5cd1763e1a60874ae
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>1</td>
-<td>testCases.All_Drivers@128d2484</td></tr>
+<td>14</td>
+<td>testCases.All_Routes@74235045</td></tr>
 <tr>
-<td title='testCases.All_Drivers.TestAddDriver()'><b>TestAddDriver</b><br>Test class: testCases.All_Drivers</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;bg-gray-800 px-4 py-2 text-white rounded-md text-xs flex items-center gap-1 w-full sm:w-auto&quot;&gt;...&lt;/button&gt; is not clickable at point (1184, 108). Other element would receive the click: &lt;div class=&quot;absolute inset-0 flex justify-center items-center bg-gray-500 bg-opacity-70&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=135.0.7049.96)
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b55fa47e997688d5cd1763e1a60874ae, clickElement {id=f.4F040ABBFCB1A62E70D113B37F9BABDD.d.720AC0F995D4CC7DE5AC5722CA7AD09E.e.18}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\TESLAL~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54638}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54638/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (b55fa47e997688d5cd1763e1a60874ae)] -&gt; xpath: //button[text()=&apos;Add drivers&apos;]]
-Session ID: b55fa47e997688d5cd1763e1a60874ae
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy10.click(Unknown Source)
-	at PageObjects.AllDrivers.addNewDriver(AllDrivers.java:64)
-	at testCases.All_Drivers.TestAddDriver(All_Drivers.java:50)
+<td title='testCases.All_Routes.UpdateRoute()'><b>UpdateRoute</b><br>Test class: testCases.All_Routes</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Validation Error: Phone number must be exactly 11 digits,
+	Unexpected toast message expected [Route updated successfully.] but found [null],
+	Testcase Failed
+	at testCases.All_Routes.UpdateRoute(All_Routes.java:148)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1418315639", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1418315639'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;bg-gray-800 px-4 py-2 text-white rounded-md text-xs flex items-center gap-1 w-full sm:w-auto&quot;&gt;...&lt;/button&gt; is not clickable at point (1184, 108). Other element would receive the click: &lt;div class=&quot;absolute inset-0 flex justify-center items-center bg-gray-500 bg-opacity-70&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=135.0.7049.96)
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b55fa47e997688d5cd1763e1a60874ae, clickElement {id=f.4F040ABBFCB1A62E70D113B37F9BABDD.d.720AC0F995D4CC7DE5AC5722CA7AD09E.e.18}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\TESLAL~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54638}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54638/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (b55fa47e997688d5cd1763e1a60874ae)] -&gt; xpath: //button[text()=&apos;Add drivers&apos;]]
-Session ID: b55fa47e997688d5cd1763e1a60874ae
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy10.click(Unknown Source)
-	at PageObjects.AllDrivers.addNewDriver(AllDrivers.java:64)
-	at testCases.All_Drivers.TestAddDriver(All_Drivers.java:50)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1418609585", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1418609585'><pre>java.lang.AssertionError: The following asserts failed:
+	Validation Error: Phone number must be exactly 11 digits,
+	Unexpected toast message expected [Route updated successfully.] but found [null],
+	Testcase Failed
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.All_Routes.UpdateRoute(All_Routes.java:148)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -343,8 +218,8 @@ Session ID: b55fa47e997688d5cd1763e1a60874ae
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>6</td>
-<td>testCases.All_Drivers@128d2484</td></tr>
+<td>23</td>
+<td>testCases.All_Routes@74235045</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -355,25 +230,20 @@ Session ID: b55fa47e997688d5cd1763e1a60874ae
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.All_Drivers.TestUpdateDriver()'><b>TestUpdateDriver</b><br>Test class: testCases.All_Drivers</td>
+<td title='testCases.All_Routes.performlogin()'><b>performlogin</b><br>Test class: testCases.All_Routes</td>
 <td></td>
-<td>16</td>
-<td>testCases.All_Drivers@128d2484</td></tr>
+<td>2</td>
+<td>testCases.All_Routes@74235045</td></tr>
 <tr>
-<td title='testCases.All_Drivers.performlogin()'><b>performlogin</b><br>Test class: testCases.All_Drivers</td>
+<td title='testCases.All_Routes.setup()'><b>setup</b><br>Test class: testCases.All_Routes</td>
 <td></td>
-<td>0</td>
-<td>testCases.All_Drivers@128d2484</td></tr>
+<td>4</td>
+<td>testCases.All_Routes@74235045</td></tr>
 <tr>
-<td title='testCases.All_Drivers.setup()'><b>setup</b><br>Test class: testCases.All_Drivers</td>
+<td title='testCases.All_Routes.deleteRoute()'><b>deleteRoute</b><br>Test class: testCases.All_Routes</td>
 <td></td>
-<td>22</td>
-<td>testCases.All_Drivers@128d2484</td></tr>
-<tr>
-<td title='testCases.All_Drivers.FetLocDriver()'><b>FetLocDriver</b><br>Test class: testCases.All_Drivers</td>
-<td></td>
-<td>0</td>
-<td>testCases.All_Drivers@128d2484</td></tr>
+<td>5</td>
+<td>testCases.All_Routes@74235045</td></tr>
 </table><p>
 </body>
 </html>

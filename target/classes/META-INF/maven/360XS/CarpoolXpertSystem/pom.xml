@@ -37,7 +37,31 @@
     <artifactId>poi-ooxml</artifactId>
     <version>5.4.1</version>
 </dependency>
+
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.1.2</version>
+</dependency>
  
+ <!-- Log4j2 API -->
+    <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-api</artifactId>
+        <version>2.20.0</version> <!-- use latest compatible version -->
+    </dependency>
+
+    <!-- Log4j2 Core (required!) -->
+    <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-core</artifactId>
+        <version>2.20.0</version>
+    </dependency>
  </dependencies>
+ 
+ 
+    
+
+
  
 </project>

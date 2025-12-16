@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="testCases.ExtetReportManager"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testCases.All_Drivers">
+      <class name="testCases.All_Routes">
         <methods>
-          <include name="TestAddDriver"/>
-          <include name="DriverSearch"/>
-          <include name="DeleteDriver"/>
+          <include name="TestaddRoute"/>
+          <include name="searchRoute"/>
+          <include name="UpdateRoute"/>
         </methods>
-      </class> <!-- testCases.All_Drivers -->
+      </class> <!-- testCases.All_Routes -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

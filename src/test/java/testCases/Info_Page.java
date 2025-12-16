@@ -41,8 +41,8 @@ public class Info_Page {
 		  infoPage editdriver= new infoPage(driver);
 
 	      // Fill in login form
-	      editdriver.clickDriver();
-	      editdriver.EditDriver("C:/Users/Tesla Laptops/Pictures/Hamza Sarwar.jpg","Jamil ALI","01274567469", "MBH123-cb","Folio36");
+//	      editdriver.clickDriver();
+	      editdriver.EditDriver("C:/Users/Tesla Laptops/Pictures/Hamza Sarwar.jpg","Jamil ALI","01274567469", "MBH123-cb","mycomabc");
 	         
 	  }
 	  
